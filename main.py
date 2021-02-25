@@ -22,11 +22,7 @@ pygame.mixer.init()
 
 
 #list of songs
-song_names = ['Bas - Methylone','Bas - Night Job','Immortal Technique - Creation and Distruction',
-                'Immortal Technique - Dominant Species','J.I.D - D_Vision','J.I.D - Lauder',
-                'Joyner Lucas - Devils Work','Joyner Lucas - FYM','Joyner Lucas - Ultrasound',
-                'Kendrick Lamar - Collard Greens','Logic - Confessions of a Dangerous Mind',
-                'Post Malone - Circles','Post Malone - Enemies']
+song_names = ['chimes','chord','ding','ir_begin','ir_end','ir_inter','notify','recycle','ringout','SpeechDisambiguation','SpeechMisrecognition','SpeechOff']
 
 #Class to run program
 class music:
@@ -75,7 +71,7 @@ class music:
         #horizontal slide of words
         self.canvas=Canvas(root,bg='black')
         self.canvas.place(x=5,y=160)
-        self.text_var="Hey there! Select a song from the playlist alongside and press 'PLAY' →"
+        self.text_var="Hey there! Select a default windows sound from the playlist alongside and press 'PLAY' →"
         self.text=self.canvas.create_text(0,-75,text=self.text_var,font=('Times New Roman',20,'bold'),fill='green',tags=("marquee",),anchor='w')
         width = 390
         height = 40
